@@ -1,0 +1,144 @@
+.table{
+    display: flex;
+    justify-content: center;
+}
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    text-align: left;
+    
+}
+
+table thead tr {
+    background-color: #660000;
+    color: #ffffff;
+    text-align: left;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+table tbody tr:nth-of-type(odd) {
+    background-color: #ffffff;
+}
+
+.download-btn {
+    color: #2c0da5;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.view-more-btn {
+    display: block;
+    background-color: #660000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+
+   
+    .marquee-content a{
+        text-align: center; /* Center align the text */
+        font-size: 2vw; /* Adjust font size to be smaller */
+        margin: 0 auto; /* Centering the content horizontally */
+        padding: 0 20px; 
+    }
+    table thead tr {
+        display: none;
+    }
+
+    table tr {
+        margin-bottom: 15px;
+    }
+
+    table td {
+        display: block;
+        text-align: right;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        padding-left: 15px;
+        font-weight: bold;
+    }
+}
+
+
+/* Marquee CSS */
+  .marquee-container {
+    width: 100%;
+    padding-top: 34px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee-content {
+    /* display: -block; */
+    white-space: nowrap;
+    /* animation: scroll-left 13s linear infinite; */
+    text-align: center;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+.marquee-content a{
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100vw); /* Start from right end */
+    }
+    100% {
+        transform: translateX(-100%); /* Move to left end */
+    }
+}
+
+/* Glamorizing new icon */
+.new-icon {
+    color: red;
+    font-weight: bold;
+    font-size: 7px;
+    animation: blink .5s infinite alternate;
+}
+
+@keyframes blink {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.1;
+    }
+}

@@ -1,0 +1,66 @@
+#ceo-message .container {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.ceo-message {
+    display: flex;
+    flex-wrap: wrap;
+    background-color:#d0cccc33;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.ceo-image {
+    width: 30vw;
+}
+
+.ceo-image img {
+    display: inline-block;
+    width: 80%;
+    object-fit: contain;
+    margin-top: 83px;
+}
+
+.message-content {
+    flex: 2;
+    padding: 20px;
+}
+
+.message-content h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.message-content p {
+    color: #555;
+    line-height: 1.8;
+    text-align: justify;
+    padding-top: 50px;
+}
+@media (min-width: 900px) {
+    .ceo-image img {
+        height: 300px;
+    }
+}
+/* Responsive */
+@media (max-width: 768px) {
+    .ceo-message {
+        flex-direction: column;
+    }
+
+    .ceo-image, .message-content {
+        width: 100%;
+        
+    }
+    .ceo-image{
+        padding-top: 20px;
+    }
+
+    .message-content {
+        padding: 20px 15px;
+    }
+}

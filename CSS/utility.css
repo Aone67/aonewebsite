@@ -1,0 +1,25 @@
+*{
+    scroll-behavior: smooth;
+    /* border: 2px solid rgba(255, 0, 0, 0.411); */
+}
+.heading {
+    text-align: center;
+    margin-bottom: -29px;
+    font-size: 3em;
+}
+ .noticeboard{
+    background: #9aa1a726;
+    padding: 20px;
+}
+
+
+
+  .our {
+    color: #615b59; /* Tomato color for 'Our' */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+  }
+
+  .services {
+    color:#660000; /* Aqua color for 'Services' */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+  }

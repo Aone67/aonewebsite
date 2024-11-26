@@ -1,0 +1,221 @@
+#home {
+  position: relative;
+  top: 70px;
+}
+
+.slideshow-container .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 30%;
+  width:100vw;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.slideshow-container .title h1 {
+  color: white;
+  font-size: 3.7em;
+  font-weight: bolder;
+}
+
+.slideshow-container .title p {
+  color: white;
+  font-size: 1.3em;
+  margin-top: 30px;
+}
+
+.slideshow-container .title a {
+  text-decoration: none;
+  display:  block;
+  position: absolute;
+  top: 40vh;
+  left: 20px;
+  color:#660000;
+  display: block;
+  padding: 15px 45px;
+  background-color:  white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.fade {
+  animation-name:fade;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+}
+  
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.carousel { 
+  position: relative; width: 100%; max-width: 600px; margin: auto; overflow: hidden;
+ }
+
+.carousel-slides {
+   display: flex; transition: transform 1.5s ease-in-out;
+   }
+
+.carousel-slide { 
+  min-width: 100%; box-sizing: border-box; 
+}
+
+.carousel-indicators { 
+  display: flex; justify-content: right; position: absolute; bottom: 10px; width: 100%;
+  padding-right: 15px;
+ }
+
+.indicator {
+   width: 10px; height: 10px; margin: 5px; background-color: #430707; border-radius: 50%; cursor: pointer; 
+  }
+
+  .indicator.active { 
+    background-color: #8e8282; }
+
+
+
+
+
+
+
+
+
+
+
+
+    /* new css  */
+
+    /* Remove fading animation */
+.mySlides fade {
+  padding: 5px;
+  flex-shrink: 0;
+  width: 100vw;
+  display: none; /* Initially hide all slides */
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 1.5s ease-in-out;
+  width: calc(100vw * 9); /* 7 original + 2 clones */
+}
+
+.slideshow-container {
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+}
+
+
+
+/* Image styles (remains same) */
+.slideshow-container img {
+  height: 40vw;
+  display: block;
+  margin: auto;
+  width: 100vw;
+  filter: brightness(0.9);
+  object-fit: cover;
+}
+
+/* Title styling remains unchanged */
+
+
+
+.play-pause-btn {
+  position: relative;
+ 
+  background-color: #430707;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size : 0.6em;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 999; /* Make sure it sits above other elements */
+}
+
+.play-pause-btn:hover {
+  background-color: #8e8282;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .slideshow-container img {
+    height: 75vh;
+    max-width: 100%
+    
+  }
+
+  .slideshow-container .title h1 {
+    font-size: 3.2em;
+  }
+
+  .slideshow-container .title a {
+    padding: 12px 35px;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .slideshow-container img {
+    height: 60vh;
+    max-width: 100%
+  }
+
+  .slideshow-container .title h1 {
+    font-size: 2.5em;
+  }
+
+  .slideshow-container .title a {
+    padding: 10px 30px;
+    font-size: 0.6em;
+    top: 15vh;
+  }
+
+  .play-pause-btn {
+    position: relative;
+   
+    background-color: #430707;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size : 0.3em;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 999; /* Make sure it sits above other elements */
+  }
+}
+
+@media (max-width: 480px) {
+  .slideshow-container img {
+    height: 50vh;
+    max-width: 100%
+  }
+
+  .slideshow-container .title h1 {
+    font-size: 1.8em;
+  }
+
+  .slideshow-container .title a {
+    padding: 8px 20px;
+    font-size: 0.3em;
+    top: 9vh;
+  }
+
+  
+}
+
+
+
+
+
+

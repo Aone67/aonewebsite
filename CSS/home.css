@@ -31,7 +31,7 @@
   text-decoration: none;
   display:  block;
   position: absolute;
-  top: 40vh;
+  top: 45vh;
   left: 20px;
   color:#660000;
   display: block;
@@ -130,18 +130,35 @@
 
 
 
-.play-pause-btn {
+/* .play-pause-btn {
   position: relative;
  
   background-color: #430707;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 6px 6px;
   font-size : 0.6em;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 18px;
   z-index: 999; /* Make sure it sits above other elements */
+/* }  */
+
+.play-pause-btn {
+  position: relative;
+  background-color: #430707;
+  color: white;
+  border: none;
+  width: 18px; /* Ensure width and height are equal for a circular shape */
+  height: 18px;
+  font-size: 0.6em;
+  cursor: pointer;
+  border-radius: 50%; /* Makes the button circular */
+  z-index: 999; /* Ensure it stays above other elements */
+  /* display: flex; */
+  align-items: center;
+  justify-content: center; /* Centers the content inside the button */
 }
+
 
 .play-pause-btn:hover {
   background-color: #8e8282;
@@ -162,6 +179,8 @@
   .slideshow-container .title a {
     padding: 12px 35px;
     font-size: 1em;
+    top: 40vh;
+
   }
 }
 
@@ -178,20 +197,23 @@
   .slideshow-container .title a {
     padding: 10px 30px;
     font-size: 0.6em;
-    top: 15vh;
+    top: 31vw;
   }
 
   .play-pause-btn {
-    position: relative;
-   
-    background-color: #430707;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size : 0.3em;
-    cursor: pointer;
-    border-radius: 5px;
-    z-index: 999; /* Make sure it sits above other elements */
+  position: relative;
+  background-color: #430707;
+  color: white;
+  border: none;
+  width: 18px; /* Ensure width and height are equal for a circular shape */
+  height: 18px;
+  font-size: 0.6em;
+  cursor: pointer;
+  border-radius: 50%; /* Makes the button circular */
+  z-index: 999; /* Ensure it stays above other elements */
+  /* display: flex; */
+  align-items: center;
+  justify-content: center; /* C/* Make sure it sits above other elements */
   }
 }
 
@@ -208,7 +230,7 @@
   .slideshow-container .title a {
     padding: 8px 20px;
     font-size: 0.3em;
-    top: 9vh;
+    top: 35vw;
   }
 
   

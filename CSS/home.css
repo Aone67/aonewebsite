@@ -35,7 +35,7 @@
   left: 20px;
   color:#660000;
   display: block;
-  padding: 15px 45px;
+  padding: 4px 10px;
   background-color:  white;
   border-radius: 5px;
   font-weight: bold;
@@ -177,7 +177,7 @@
   }
 
   .slideshow-container .title a {
-    padding: 12px 35px;
+    padding: 4px 10px;
     font-size: 1em;
     top: 40vh;
 
@@ -195,7 +195,7 @@
   }
 
   .slideshow-container .title a {
-    padding: 10px 30px;
+    padding: 4px 10px;
     font-size: 0.6em;
     top: 31vw;
   }
@@ -228,7 +228,7 @@
   }
 
   .slideshow-container .title a {
-    padding: 8px 20px;
+    padding: 4px 10px;
     font-size: 0.3em;
     top: 35vw;
   }

@@ -124,7 +124,8 @@ input[type="submit"]:hover {
     }
 
     .message-block .message {
-        font-size: 40px; /* Reduce font size for smaller screens */
+        font-size: 37px;
+        text-align: center;
     }
 
     .modal-header {
@@ -147,6 +148,8 @@ input[type="submit"]:hover {
 
     .message-block .message {
         font-size: 35px; /* Further reduce font size */
+        text-align: center;
+
     }
 
     .modal-header {
